@@ -21,7 +21,7 @@ export default function Header() {
           <Link href="/docs" className="text-gray-300 hover:text-white transition">
             Docs
           </Link>
-          <Link href="/auth/login" className="btn-primary text-sm">
+          <Link href="/auth/login" className="px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg font-semibold hover:shadow-lg transition text-sm">
             Sign In
           </Link>
         </nav>
