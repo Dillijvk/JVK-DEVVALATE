@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -25,10 +26,10 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex gap-4 justify-center"
+        className="flex gap-4 justify-center flex-wrap"
       >
-        <button className="btn-primary">Explore Templates</button>
-        <button className="btn-secondary">View Docs</button>
+        <Link href="/marketplace" className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg font-semibold hover:shadow-lg transition">Explore Templates</Link>
+        <Link href="/docs" className="px-8 py-3 border border-gray-700 rounded-lg font-semibold hover:bg-gray-800 transition">View Docs</Link>
       </motion.div>
     </section>
   )
