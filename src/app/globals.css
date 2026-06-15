@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-gray-100 antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 rounded-lg font-semibold hover:shadow-lg transition;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 border border-gray-700 rounded-lg font-semibold hover:bg-gray-800 transition;
+  }
+  .card {
+    @apply bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-purple-500 transition;
+  }
+}
